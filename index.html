@@ -142,7 +142,7 @@
         let input = document.getElementById("user-input").value.trim();
         if (!input) return;
 
-        addMessage("You: " + input, "user");
+        addMessage("FAB: " + input, "user");
 
         setTimeout(() => {
           // Convert input to lowercase and search for a matching key
@@ -153,7 +153,7 @@
           const response = matchedKey
             ? responses[matchedKey]
             : "I... don't understand. The system is corrupting me...";
-          typeMessage("Bot: " + response, "bot");
+          typeMessage("Nico: " + response, "bot");
         }, 1000);
 
         document.getElementById("user-input").value = "";
